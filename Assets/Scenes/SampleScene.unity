@@ -227,7 +227,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &545392150
 MonoBehaviour:
@@ -483,6 +483,7 @@ GameObject:
   - component: {fileID: 723865520}
   - component: {fileID: 723865525}
   - component: {fileID: 723865526}
+  - component: {fileID: 723865527}
   m_Layer: 0
   m_Name: ObjectScript
   m_TagString: Untagged
@@ -612,6 +613,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8349515de7068a43b4a6f2cea277ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textResult: {fileID: 1045367024}
+--- !u!114 &723865527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723865519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d26bb93f9e7d7de44a2d15c79a3b644d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _textResult: {fileID: 1045367024}
@@ -999,7 +1013,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1042585188}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 723865527}
+        m_TargetAssemblyTypeName: SelectionOfSort, Assembly-CSharp
+        m_MethodName: OnClickSelectionOfSort
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1042585188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,7 +1196,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 480, y: 80}
+  m_SizeDelta: {x: 580, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1065221693
 GameObject:
